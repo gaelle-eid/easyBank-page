@@ -2,23 +2,23 @@
 
 :root {
   --articles-background:  hsl(0, 0%, 100%);
-  --main-background: hsl(0, 0%, 98%);
+  --main-background: hsl(0, 33%, 98%);
   --generationDigital-background: hsl(0, 0%, 98%);
  --easybank-background:  hsl(220, 16%, 96%);
 
 --paragraph-color:var(--articles-background);
 --author-color:var(--articles-background);
 --header2-color:var(--articles-background);
---header1-color:var(--articles-background);
---header3-color:var(--articles-background);
+--header1-color:hsl(0, 33%, 98%);
+--header3-color: black;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   display: flex;
-   justify-content: center;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start; /*ha khalit kelshi ys3 bl container*/
  
 }
 
@@ -28,94 +28,23 @@ body {
   background-color: var(--main-background);
   width: 100%;
   display: flex;
-  
   flex-direction: column;
- 
- 
   border-radius: 1.5%;
 }
 
-
-
-.easybank_parentFlex {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--easybank-background);
-    
-  
-
-}
-
-
-.easybank_flex {
-  display: flex;
-  flex-direction: row;
-  margin:5%;
-
+/*-----------------------------generationDigitalBanking----------------------*/
+.paragraph{
+  margin-left:5%;
 }
 
 .digitalbanking_button{
     margin-left:5%;
     margin-bottom:7%
 }
-/*
-.articles_parentflex{
-     display: flex;
-  flex-direction: column;
-}
 
-.articles_flex{
-     display: flex;
-  flex-direction: row;
-  background-color: var(--articles-background);
-  margin-right:5%;
-}
-
-
- font-family: "Young Serif", serif;
-  font-weight: 400;300,700
-  font-style: normal;
-  */
-
-  .header2{
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-left:5%;
- 
-  }
-
-  .header3{
-  
-   font-size: 1rem;
-  font-weight: 300;
-  margin-left:5%;
-  }
-
-  .digitalbanking_header{
+.digitalbanking_header{
   margin-left:5%;
   font-weight:500;
-  }
-
-  .paragraph{
-    
- font-size: 0.8rem;
- padding-left:5%;
- 
-  font-weight:300;
- 
-
-  }
-
-  .author{
-    
-
-  margin-left:5%;
-   font-size: 0.5rem;
-  }
-
-  .icon{
-  width: 3rem;
-    height: auto;
   }
 
   .button{
@@ -124,3 +53,96 @@ body {
     border-radius: 2%;
     background-color:hsl(136, 65%, 51%);
   }
+  
+
+/*--------------------------------------easyBank-----------------------------*/
+.easybank_parentFlex {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--easybank-background);
+}
+
+.easybank_flex {
+  display: flex;
+  flex-direction: row;
+  margin:5%;
+}
+
+
+.header3_easybank{
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left:5%;
+  }
+
+  .paragraph_easybank{
+  font-size: 0.8rem;
+  padding-left:5%;
+  font-weight:300;
+  }
+
+ .icon{
+  width: 3rem;
+  height: auto;
+  }
+
+
+
+/*--------------------------------------articles-----------------------------*/
+.articles_parentflex{
+     display: flex;
+  flex-direction: column;
+
+}
+
+.articles_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ margin-left:2.5%;
+ margin-right:2.5%;
+}
+
+  .header3_articles{
+   font-size: 1rem;
+   font-weight: 300;
+   margin-left:5%;
+  }
+
+  .paragraph_articles{
+  font-size: 0.8rem;
+  padding-left:5%;
+  font-weight:300;
+  }
+
+  .author{
+   margin-left:5%;
+   font-size: 0.5rem;
+  }
+
+
+.image{
+    width:100%;
+    height: 40%; 
+}
+
+.article{
+ margin-right:1%;
+ background-color: white;
+ margin-bottom:2rem;
+ margin-right:2rem;
+ margin-left:2rem;
+}
+
+
+
+/*--------------------------------------header2 for both easyBank and article parts-------------*/
+  .header2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left:5%;
+  }
+
+
+
+  
