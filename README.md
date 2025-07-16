@@ -1,2 +1,2 @@
-# My first github project
-Front-end project. Learning to use Github.
+# My first GitHub project
+This is my second front-end project. Learning to use GitHub.
