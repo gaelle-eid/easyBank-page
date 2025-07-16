@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root {
+  --articles-background:  hsl(0, 0%, 100%);
+  --main-background: hsl(0, 0%, 98%);
+  --generationDigital-background: hsl(0, 0%, 98%);
+ --easybank-background:  hsl(220, 16%, 96%);
+
+--paragraph-color:var(--articles-background);
+--author-color:var(--articles-background);
+--header2-color:var(--articles-background);
+--header1-color:var(--articles-background);
+--header3-color:var(--articles-background);
+
+
+
+
+
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+   justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.mainparent_container{
+ 
+  background-color: var(--main-background);
+  width: 100%;
+  display: flex;
+  
+  flex-direction: column;
+ 
+ 
+  border-radius: 1.5%;
+}
+
+
+
+.easybank_parentFlex {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--easybank-background);
+    
+  
+
+}
+
+
+.easybank_flex {
+  display: flex;
+  flex-direction: row;
+  margin:5%;
+
+}
+
+.digitalbanking_button{
+    margin-left:5%;
+    margin-bottom:7%
+}
+/*
+.articles_parentflex{
+     display: flex;
+  flex-direction: column;
+}
+
+.articles_flex{
+     display: flex;
+  flex-direction: row;
+  background-color: var(--articles-background);
+  margin-right:5%;
+}
+
+
+ font-family: "Young Serif", serif;
+  font-weight: 400;300,700
+  font-style: normal;
+  */
+
+  .header2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left:5%;
+ 
+  }
+
+  .header3{
+  
+   font-size: 1rem;
+  font-weight: 300;
+  margin-left:5%;
+  }
+
+  .digitalbanking_header{
+  margin-left:5%;
+  font-weight:500;
+  }
+
+  .paragraph{
+    
+ font-size: 0.8rem;
+ padding-left:5%;
+ 
+  font-weight:300;
+ 
+
+  }
+
+  .author{
+    
+
+  margin-left:5%;
+   font-size: 0.5rem;
+  }
+
+  .icon{
+  width: 3rem;
+    height: auto;
+  }
+
+  .button{
+    margin-left:5%;
+    margin-bottom:5%;
+    border-radius: 2%;
+    background-color:hsl(136, 65%, 51%);
+  }
