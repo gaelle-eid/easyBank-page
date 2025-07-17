@@ -5,21 +5,6 @@
   --main-background: hsl(0, 33%, 98%);
   --generationDigital-background: hsl(0, 0%, 98%);
  --easybank-background:  hsl(220, 16%, 96%);
-
---paragraph-color:var(--articles-background);
---author-color:var(--articles-background);
---header2-color:var(--articles-background);
---header1-color:hsl(0, 33%, 98%);
---header3-color: black;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /*ha khalit kelshi ys3 bl container*/
- 
 }
 
 
@@ -32,69 +17,109 @@ body {
   border-radius: 1.5%;
 }
 
+/*--------------------------------------header-------------------------------*/
+.header_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width:100%;
+}
+.header_options {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black; 
+  padding-bottom: 5px; 
+}
+.header_options::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -41px;
+  height: 2px;
+  width: 0%;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+.header_options:hover::after {
+  width: 100%;
+}
+
+
+
+
 /*-----------------------------generationDigitalBanking----------------------*/
 .paragraph{
   margin-left:5%;
 }
-
 .digitalbanking_button{
     margin-left:5%;
     margin-bottom:7%
 }
-
 .digitalbanking_header{
   margin-left:5%;
-  font-weight:500;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
   }
-
-  .button{
+  .digitalbanking_paragraph{
     margin-left:5%;
-    margin-bottom:5%;
-    border-radius: 2%;
-    background-color:hsl(136, 65%, 51%);
+     font-family: "Public Sans", sans-serif;
+  font-weight: 150;
   }
-  
+  .header_options{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 150;
+    font-size:0.8rem;
+  }
+  .button{
+    margin-left:4rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    background-color:hsl(136, 65%, 51%);
+    border-color:  hsl(136, 65%, 51%);
+    font-size: 0.7rem; 
+    color: white;
+    border-radius: 10rem;
+    padding: 0.5rem 1.5rem; /* 0.5 for top n bottom , 1.5 for left n right  */
+  }
 
 /*--------------------------------------easyBank-----------------------------*/
 .easybank_parentFlex {
   display: flex;
   flex-direction: column;
   background-color: var(--easybank-background);
+  margin-top:4rem;
+  width:100%;
 }
-
 .easybank_flex {
   display: flex;
   flex-direction: row;
   margin:5%;
 }
-
-
 .header3_easybank{
   font-size: 1rem;
   font-weight: 300;
-  margin-left:5%;
+  padding-left:5%;
+  font-family: "Public Sans", sans-serif;
   }
-
   .paragraph_easybank{
   font-size: 0.8rem;
   padding-left:5%;
-  font-weight:300;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 150;
   }
-
  .icon{
   width: 3rem;
   height: auto;
   }
 
-
-
 /*--------------------------------------articles-----------------------------*/
 .articles_parentflex{
      display: flex;
   flex-direction: column;
-
 }
-
 .articles_flex{
   display: flex;
   flex-direction: row;
@@ -102,30 +127,28 @@ body {
  margin-left:2.5%;
  margin-right:2.5%;
 }
-
   .header3_articles{
    font-size: 1rem;
    font-weight: 300;
    margin-left:5%;
+    font-family: "Public Sans", sans-serif;
   }
-
   .paragraph_articles{
   font-size: 0.8rem;
   padding-left:5%;
-  font-weight:300;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 150;
   }
-
   .author{
-   margin-left:5%;
-   font-size: 0.5rem;
+  margin-left:5%;
+  font-size: 0.5rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 150;
   }
-
-
 .image{
     width:100%;
     height: 40%; 
 }
-
 .article{
  margin-right:1%;
  background-color: white;
@@ -134,15 +157,66 @@ body {
  margin-left:2rem;
 }
 
-
-
-/*--------------------------------------header2 for both easyBank and article parts-------------*/
+/*--------------------------------------headers for section easybank and artcles -----------------------------------------*/
   .header2{
   font-size: 1.5rem;
   font-weight: 400;
   margin-left:5%;
+  font-family: "Public Sans", sans-serif;
   }
 
-
-
-  
+/*--------------------------------------footer-----------------------------*/
+.footer_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(6, 6, 88);
+  padding-right: 5%;
+  padding-left:5%;
+}
+.easybank_logo{
+  margin-top:1.5rem;
+  background-color:white;
+   margin-bottom:1.5rem;
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:4rem;
+}
+.logo{
+  width:1rem;
+}
+.option{
+   font-size: 0.8rem;
+  font-weight: 150;
+  font-family: "Public Sans", sans-serif; 
+}
+.footer_container_firstcolumn{
+ display: flex;
+  flex-direction: column;
+}
+.footer_container_secondcolumn{
+  color:white;
+ padding:1rem;
+}
+.footer_container_thirdcolumn{
+  color:white;
+ padding:1rem;
+}
+.option:hover {
+  color: rgb(25, 210, 130);
+  cursor: pointer;
+}
+.logo {
+  cursor: pointer;
+}
+.logo:hover {
+  filter: 
+    sepia(3) 
+    saturate(1000%) 
+    hue-rotate(125deg) 
+    brightness(1.1) 
+    contrast(2.2);
+}
